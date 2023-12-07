@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body> 
+        <header class="cover-image-section"></header>
+
+        <section class="content-section"> 
+            <div class="todo-section__wrapper">  
+                <section class="todo-section"> 
+                    <div class="todo-section__header">
+                        <h4 class="logo">TODO</h4>
+                        <div class="toggle-appearance-btn">
+
+                        </div>
+                    </div>
+                    <div class="todo-section__entry">
+                        <div class="entry-field">
+                            <figure class="error-img">
+                                <img src="images/icon-error.svg" alt="">
+                            </figure>
+                            <div class="checkbox">
+                                <img src="images/icon-check.svg" alt="check mark" class="check-mark">
+                            </div>
+                            <form id="add-list" class="input-field" onsubmit="return displayTodoList();">
+                                <input id="entry-text" type="text" placeholder="Create a new task...">
+                            </form>
+                        </div>
+                    </div>
+                    <div id="list" class="todo-section__list"></div>
+        
+                    <div class="todo-section__status">
+                        <div class="status-wrapper">
+                            <div class="items-left">
+                                <p class="todo-count">0 items left</p>
+                            </div>
+            
+                            <div class="list-preference">
+                                <div class="content-wrapper">
+                                    <p class="all">All</p>
+                                    <p class="active">Active</p>
+                                    <p class="completed">Completed</p>
+                                </div>
+                            </div>
+            
+                            <div class="clear-completed-btn">
+                                <p>Clear Completed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-list-preference">
+                        <div class="content-wrapper">
+                            <p class="all">All</p>
+                            <p class="active">Active</p>
+                            <p class="completed">Completed</p>
+                        </div>
+                    </div>
+                
+                    <aside class="side-info">
+                        <p>Drag and drop to reorder list</p>
+                    </aside>
+                </section>
+            </div>
+        </section>
+        
+        <script defer src="java.js"></script>
+    </body>
+</html>
